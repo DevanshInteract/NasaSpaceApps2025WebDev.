@@ -14,7 +14,6 @@
             box-sizing: border-box;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
         }
-
         :root {
             --primary: #0b3d91;
             --secondary: #fc3d21;
@@ -27,18 +26,15 @@
             --glass: rgba(255, 255, 255, 0.1);
             --glass-border: rgba(255, 255, 255, 0.2);
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             background: linear-gradient(135deg, var(--dark) 0%, #1a1a2e 50%, #16213e 100%);
             color: var(--light);
             overflow-x: hidden;
             line-height: 1.6;
         }
-
         /* Animated background particles */
         .particles {
             position: fixed;
@@ -49,7 +45,6 @@
             z-index: -1;
             overflow: hidden;
         }
-
         .particle {
             position: absolute;
             width: 2px;
@@ -59,12 +54,10 @@
             animation: float 6s ease-in-out infinite;
             opacity: 0.6;
         }
-
         @keyframes float {
             0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.6; }
             50% { transform: translateY(-20px) rotate(180deg); opacity: 1; }
         }
-
         /* Enhanced Navigation - More Responsive */
         .navbar {
             position: fixed;
@@ -81,25 +74,21 @@
             border-bottom: 1px solid var(--glass-border);
             transition: all 0.3s ease;
         }
-
         .navbar.scrolled {
             background: rgba(10, 26, 47, 0.98);
             box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
             padding: 0.8rem 5%;
         }
-
         .logo {
             display: flex;
             align-items: center;
             gap: 12px;
             flex-shrink: 0;
         }
-
         .logo img {
             height: 45px;
             width: auto;
         }
-
         .logo h1 {
             font-size: clamp(1rem, 2.5vw, 1.5rem);
             font-weight: 700;
@@ -110,18 +99,15 @@
             animation: gradientShift 3s ease-in-out infinite;
             white-space: nowrap;
         }
-
         @keyframes gradientShift {
             0%, 100% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
         }
-
         .nav-links {
             display: flex;
             gap: 1.5rem;
             align-items: center;
         }
-
         .nav-links a {
             color: var(--light);
             text-decoration: none;
@@ -133,7 +119,6 @@
             overflow: hidden;
             font-size: 0.95rem;
         }
-
         .nav-links a::before {
             content: '';
             position: absolute;
@@ -144,17 +129,14 @@
             background: linear-gradient(90deg, transparent, rgba(79, 195, 247, 0.2), transparent);
             transition: left 0.5s ease;
         }
-
         .nav-links a:hover::before {
             left: 100%;
         }
-
         .nav-links a:hover {
             color: var(--accent);
             background: var(--glass);
             transform: translateY(-2px);
         }
-
         .nav-links a.register-btn {
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: white;
@@ -164,12 +146,10 @@
             position: relative;
             overflow: hidden;
         }
-
         .nav-links a.register-btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(252, 61, 33, 0.6);
         }
-
         .menu-toggle {
             display: none;
             font-size: 1.5rem;
@@ -178,11 +158,9 @@
             transition: transform 0.3s ease;
             z-index: 1001;
         }
-
         .menu-toggle:hover {
             transform: scale(1.1);
         }
-
         /* Enhanced Hero Section - Better Mobile */
         .hero {
             min-height: 100vh;
@@ -193,7 +171,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .hero::before {
             content: '';
             position: absolute;
@@ -208,19 +185,16 @@
             z-index: -1;
             animation: backgroundPulse 8s ease-in-out infinite;
         }
-
         @keyframes backgroundPulse {
             0%, 100% { opacity: 0.3; }
             50% { opacity: 0.6; }
         }
-
         .hero-content {
             max-width: 900px;
             z-index: 2;
             text-align: center;
             width: 100%;
         }
-
         .hero h1 {
             font-size: clamp(2rem, 8vw, 4.5rem);
             line-height: 1.1;
@@ -234,12 +208,10 @@
             text-align: center;
             letter-spacing: -0.02em;
         }
-
         @keyframes heroGradient {
             0%, 100% { background-position: 0% 50%; }
             50% { background-position: 100% 50%; }
         }
-
         .hero p {
             font-size: clamp(1rem, 3vw, 1.3rem);
             margin-bottom: 2.5rem;
@@ -251,7 +223,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         /* Enhanced Countdown - More Responsive */
         .countdown {
             display: grid;
@@ -262,7 +233,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         .countdown-item {
             background: var(--glass);
             backdrop-filter: blur(20px);
@@ -274,13 +244,11 @@
             overflow: hidden;
             transition: all 0.3s ease;
         }
-
         .countdown-item:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.15);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
         }
-
         .countdown-number {
             font-size: clamp(1.8rem, 5vw, 2.5rem);
             font-weight: 800;
@@ -288,14 +256,12 @@
             display: block;
             line-height: 1;
         }
-
         .countdown-label {
             font-size: clamp(0.8rem, 2.5vw, 0.9rem);
             color: #a0aec0;
             margin-top: 0.5rem;
             font-weight: 500;
         }
-
         /* Enhanced Buttons - Better Mobile */
         .cta-buttons {
             display: flex;
@@ -304,7 +270,6 @@
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .btn {
             padding: 1.2rem 2.5rem;
             border-radius: 50px;
@@ -323,43 +288,36 @@
             min-width: 200px;
             text-align: center;
         }
-
         .btn-primary {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
             box-shadow: 0 8px 30px rgba(252, 61, 33, 0.4);
         }
-
         .btn-primary:hover {
             transform: translateY(-4px);
             box-shadow: 0 15px 40px rgba(252, 61, 33, 0.6);
         }
-
         .btn-secondary {
             background: var(--glass);
             color: white;
             border: 2px solid var(--glass-border);
             backdrop-filter: blur(20px);
         }
-
         .btn-secondary:hover {
             background: rgba(255, 255, 255, 0.2);
             border-color: var(--accent);
             transform: translateY(-4px);
             box-shadow: 0 15px 40px rgba(79, 195, 247, 0.3);
         }
-
         /* Enhanced Sections */
         section {
             padding: clamp(3rem, 8vw, 6rem) 5%;
             position: relative;
         }
-
         .section-title {
             text-align: center;
             margin-bottom: 4rem;
         }
-
         .section-title h2 {
             font-size: clamp(1.8rem, 6vw, 3rem);
             margin-bottom: 1.5rem;
@@ -369,7 +327,6 @@
             font-weight: 700;
             letter-spacing: -0.01em;
         }
-
         .section-title p {
             color: #a0aec0;
             font-size: clamp(1rem, 3vw, 1.2rem);
@@ -377,14 +334,12 @@
             margin: 0 auto;
             line-height: 1.7;
         }
-
         /* Completely Redesigned About Section */
         #about {
             background: rgba(10, 26, 47, 0.3);
             position: relative;
             overflow: hidden;
         }
-
         #about::before {
             content: '';
             position: absolute;
@@ -397,12 +352,10 @@
                 radial-gradient(circle at 75% 75%, rgba(252, 61, 33, 0.1) 0%, transparent 50%);
             z-index: -1;
         }
-
         .about-container {
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .about-hero {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -410,11 +363,9 @@
             align-items: center;
             margin-bottom: 5rem;
         }
-
         .about-text {
             z-index: 2;
         }
-
         .about-text h3 {
             font-size: clamp(1.5rem, 4vw, 2.5rem);
             margin-bottom: 2rem;
@@ -423,21 +374,18 @@
             -webkit-text-fill-color: transparent;
             font-weight: 700;
         }
-
         .about-text p {
             font-size: clamp(1rem, 2.5vw, 1.2rem);
             line-height: 1.8;
             color: #cbd5e0;
             margin-bottom: 2rem;
         }
-
         .about-stats {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 1.5rem;
             margin-top: 2rem;
         }
-
         .stat-item {
             text-align: center;
             padding: 1.5rem;
@@ -447,13 +395,11 @@
             backdrop-filter: blur(20px);
             transition: all 0.3s ease;
         }
-
         .stat-item:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.15);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
-
         .stat-number {
             font-size: clamp(1.8rem, 4vw, 2.5rem);
             font-weight: 800;
@@ -461,13 +407,11 @@
             display: block;
             margin-bottom: 0.5rem;
         }
-
         .stat-label {
             font-size: clamp(0.9rem, 2vw, 1rem);
             color: #a0aec0;
             font-weight: 500;
         }
-
         .about-visual {
             position: relative;
             border-radius: 24px;
@@ -479,7 +423,6 @@
             align-items: center;
             justify-content: center;
         }
-
         .about-visual::before {
             content: '';
             position: absolute;
@@ -492,11 +435,9 @@
             transition: opacity 0.3s ease;
             z-index: 1;
         }
-
         .about-visual:hover::before {
             opacity: 1;
         }
-
         .about-visual img {
             width: 80%;
             height: 80%;
@@ -505,22 +446,18 @@
             z-index: 2;
             position: relative;
         }
-
         .about-visual:hover img {
             transform: scale(1.05) rotate(5deg);
         }
-
         /* Enhanced Features Grid */
         .features-section {
             margin-top: 5rem;
         }
-
         .features-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
-
         .feature-card {
             background: var(--glass);
             border-radius: 20px;
@@ -532,7 +469,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .feature-card::before {
             content: '';
             position: absolute;
@@ -544,18 +480,15 @@
             opacity: 0;
             transition: opacity 0.3s ease;
         }
-
         .feature-card:hover::before {
             opacity: 1;
         }
-
         .feature-card:hover {
             transform: translateY(-10px) scale(1.02);
             background: rgba(255, 255, 255, 0.15);
             border-color: var(--accent);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
         }
-
         .feature-icon {
             font-size: clamp(2.5rem, 6vw, 3.5rem);
             margin-bottom: 1.5rem;
@@ -565,7 +498,6 @@
             position: relative;
             z-index: 2;
         }
-
         .feature-card h4 {
             font-size: clamp(1.2rem, 3vw, 1.5rem);
             margin-bottom: 1rem;
@@ -573,7 +505,6 @@
             position: relative;
             z-index: 2;
         }
-
         .feature-card p {
             color: #a0aec0;
             line-height: 1.6;
@@ -581,13 +512,11 @@
             position: relative;
             z-index: 2;
         }
-
         /* Enhanced Challenges Section */
         .challenges {
             background: rgba(10, 26, 47, 0.3);
             position: relative;
         }
-
         .challenges::before {
             content: '';
             position: absolute;
@@ -600,13 +529,11 @@
                 radial-gradient(circle at 75% 75%, rgba(252, 61, 33, 0.1) 0%, transparent 50%);
             z-index: -1;
         }
-
         .challenges-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 2rem;
         }
-
         .challenge-card {
             background: var(--glass);
             border-radius: 20px;
@@ -618,38 +545,32 @@
             position: relative;
             overflow: hidden;
         }
-
         .challenge-card:hover {
             transform: translateY(-10px) scale(1.02);
             background: rgba(255, 255, 255, 0.15);
             border-color: var(--accent);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
         }
-
         .challenge-icon {
             font-size: clamp(2.5rem, 8vw, 4rem);
             margin-bottom: 1.5rem;
         }
-
         .challenge-card h3 {
             font-size: clamp(1.2rem, 3vw, 1.5rem);
             margin-bottom: 1rem;
             font-weight: 600;
         }
-
         .challenge-card p {
             color: #a0aec0;
             line-height: 1.6;
             font-size: clamp(0.9rem, 2.5vw, 1rem);
         }
-
         /* Enhanced Schedule Timeline - More Responsive */
         .schedule-timeline {
             position: relative;
             max-width: 900px;
             margin: 0 auto;
         }
-
         .schedule-timeline::before {
             content: '';
             position: absolute;
@@ -660,13 +581,11 @@
             background: linear-gradient(to bottom, var(--primary), var(--accent), var(--secondary));
             border-radius: 2px;
         }
-
         .timeline-item {
             position: relative;
             margin-bottom: 3rem;
             padding-left: 60px;
         }
-
         .timeline-dot {
             position: absolute;
             left: 8px;
@@ -679,13 +598,11 @@
             box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4);
             animation: pulse 2s infinite;
         }
-
         @keyframes pulse {
             0% { box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4); }
             50% { box-shadow: 0 4px 25px rgba(79, 195, 247, 0.8); }
             100% { box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4); }
         }
-
         .timeline-date {
             background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
@@ -697,7 +614,6 @@
             box-shadow: 0 4px 15px rgba(11, 61, 145, 0.3);
             font-size: clamp(0.9rem, 2.5vw, 1rem);
         }
-
         .timeline-content {
             background: var(--glass);
             padding: clamp(1.5rem, 4vw, 2.5rem);
@@ -706,24 +622,20 @@
             backdrop-filter: blur(20px);
             transition: all 0.3s ease;
         }
-
         .timeline-content:hover {
             background: rgba(255, 255, 255, 0.15);
             transform: translateX(10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
-
         .timeline-content h3 {
             font-size: clamp(1.3rem, 3vw, 1.8rem);
             margin-bottom: 1.5rem;
             color: var(--accent);
             font-weight: 600;
         }
-
         .timeline-events {
             list-style: none;
         }
-
         .timeline-events li {
             padding: 1rem 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -733,31 +645,26 @@
             transition: all 0.3s ease;
             font-size: clamp(0.9rem, 2.5vw, 1rem);
         }
-
         .timeline-events li:hover {
             padding-left: 1rem;
             background: rgba(79, 195, 247, 0.1);
             border-radius: 8px;
         }
-
         .timeline-events li:last-child {
             border-bottom: none;
         }
-
         .timeline-events li i {
             color: var(--accent);
             font-size: 1.1rem;
             margin-top: 0.2rem;
             flex-shrink: 0;
         }
-
         /* Enhanced Registration Section - More Responsive */
         .registration {
             background: linear-gradient(135deg, var(--primary) 0%, #1a237e 50%, #0d47a1 100%);
             position: relative;
             overflow: hidden;
         }
-
         .registration-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -767,26 +674,22 @@
             max-width: 1200px;
             margin: 0 auto;
         }
-
         .registration-info h3 {
             font-size: clamp(1.5rem, 4vw, 2.5rem);
             margin-bottom: 1.5rem;
             font-weight: 700;
         }
-
         .registration-info p {
             margin-bottom: 2rem;
             color: #e2e8f0;
             line-height: 1.7;
             font-size: clamp(1rem, 2.5vw, 1.1rem);
         }
-
         .pricing-cards {
             display: grid;
             grid-template-columns: 1fr;
             gap: 2rem;
         }
-
         .pricing-card {
             background: var(--glass);
             border-radius: 24px;
@@ -797,20 +700,17 @@
             position: relative;
             overflow: hidden;
         }
-
         .pricing-card:hover {
             transform: translateY(-10px);
             border-color: var(--accent);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
         }
-
         .pricing-card h4 {
             font-size: clamp(1.2rem, 3vw, 1.8rem);
             margin-bottom: 1rem;
             color: var(--accent);
             font-weight: 600;
         }
-
         .price {
             font-size: clamp(2rem, 6vw, 3rem);
             font-weight: 800;
@@ -818,18 +718,15 @@
             color: white;
             line-height: 1;
         }
-
         .price span {
             font-size: clamp(1rem, 2.5vw, 1.2rem);
             color: #a0aec0;
             font-weight: 400;
         }
-
         .pricing-features {
             list-style: none;
             margin-bottom: 2.5rem;
         }
-
         .pricing-features li {
             padding: 0.8rem 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -839,29 +736,24 @@
             transition: all 0.3s ease;
             font-size: clamp(0.9rem, 2.5vw, 1rem);
         }
-
         .pricing-features li:hover {
             padding-left: 1rem;
             background: rgba(79, 195, 247, 0.1);
             border-radius: 8px;
         }
-
         .pricing-features li:last-child {
             border-bottom: none;
         }
-
         .pricing-features li i {
             color: var(--accent);
             font-size: 1.1rem;
         }
-
         /* Enhanced Contact Section */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
         }
-
         .contact-item {
             display: flex;
             gap: 1.5rem;
@@ -873,13 +765,11 @@
             backdrop-filter: blur(20px);
             transition: all 0.3s ease;
         }
-
         .contact-item:hover {
             transform: translateY(-5px);
             background: rgba(255, 255, 255, 0.15);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
         }
-
         .contact-icon {
             background: linear-gradient(135deg, var(--primary), var(--accent));
             width: 60px;
@@ -893,18 +783,15 @@
             flex-shrink: 0;
             box-shadow: 0 8px 20px rgba(79, 195, 247, 0.3);
         }
-
         .contact-details h3 {
             margin-bottom: 0.8rem;
             font-size: clamp(1.2rem, 3vw, 1.4rem);
             font-weight: 600;
         }
-
         .contact-details p {
             color: #a0aec0;
             font-size: clamp(1rem, 2.5vw, 1.1rem);
         }
-
         /* Enhanced Footer */
         footer {
             background: rgba(0, 0, 0, 0.1);
@@ -913,21 +800,18 @@
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
         }
-
         .footer-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 2.5rem;
         }
-
         .social-links {
             display: flex;
             gap: 1.5rem;
             flex-wrap: wrap;
             justify-content: center;
         }
-
         .social-links a {
             display: flex;
             align-items: center;
@@ -941,68 +825,55 @@
             border: 1px solid var(--glass-border);
             backdrop-filter: blur(20px);
         }
-
         .social-links a:hover {
             background: var(--accent);
             transform: translateY(-5px) scale(1.1);
             box-shadow: 0 10px 20px rgba(79, 195, 247, 0.4);
         }
-
         /* Enhanced Responsive Design */
         @media (max-width: 1200px) {
             .navbar {
                 padding: 1rem 3%;
             }
-            
             section {
                 padding: clamp(2.5rem, 6vw, 5rem) 3%;
             }
         }
-
         @media (max-width: 992px) {
             .about-hero,
             .registration-container {
                 grid-template-columns: 1fr;
                 gap: 3rem;
             }
-            
             .about-visual {
                 order: -1;
                 max-width: 400px;
                 margin: 0 auto;
             }
-            
             .about-stats {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
             }
-            
             .timeline-item {
                 padding-left: 50px;
             }
-            
             .schedule-timeline::before {
                 left: 15px;
             }
-            
             .timeline-dot {
                 left: 3px;
             }
-            
             .features-grid {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             }
         }
-
         @media (max-width: 768px) {
             .navbar {
                 padding: 1rem 4%;
             }
-            
             .logo h1 {
                 font-size: 1.2rem;
             }
-            
             .nav-links {
                 position: fixed;
                 top: 80px;
@@ -1018,11 +889,9 @@
                 border-top: 1px solid var(--glass-border);
                 z-index: 999;
             }
-            
             .nav-links.active {
                 left: 0;
             }
-            
             .nav-links a {
                 padding: 1rem 2rem;
                 font-size: 1.2rem;
@@ -1030,158 +899,125 @@
                 text-align: center;
                 margin: 0.5rem 0;
             }
-            
             .menu-toggle {
                 display: block;
             }
-            
             .hero {
                 padding: 100px 4% 40px;
                 min-height: 90vh;
             }
-            
             .countdown {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
                 max-width: 300px;
             }
-            
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
             }
-            
             .btn {
                 width: 100%;
                 max-width: 280px;
                 padding: 1rem 2rem;
             }
-            
             .about-stats {
                 grid-template-columns: 1fr;
             }
-            
             .features-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-            
             .feature-card {
                 padding: 2rem 1.5rem;
             }
-            
             .challenges-grid {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
             }
-            
             .challenge-card {
                 padding: 2rem 1.5rem;
             }
-            
             .timeline-item {
                 padding-left: 40px;
             }
-            
             .timeline-content {
                 padding: 1.5rem;
             }
-            
             .contact-container {
                 grid-template-columns: 1fr;
             }
-            
             .contact-item {
                 padding: 1.5rem;
             }
         }
-
         @media (max-width: 480px) {
             .navbar {
                 padding: 0.8rem 3%;
             }
-            
             .logo img {
                 height: 35px;
             }
-            
             .logo h1 {
                 font-size: 1rem;
             }
-            
             .hero {
                 padding: 90px 3% 30px;
             }
-            
             .countdown {
                 grid-template-columns: repeat(4, 1fr);
                 gap: 0.5rem;
                 max-width: 100%;
             }
-            
             .countdown-item {
                 padding: 1rem 0.5rem;
             }
-            
             .cta-buttons {
                 gap: 0.8rem;
             }
-            
             .btn {
                 padding: 1rem 1.5rem;
                 font-size: 1rem;
                 min-width: 160px;
             }
-            
             section {
                 padding: clamp(2rem, 5vw, 3rem) 3%;
             }
-            
             .section-title {
                 margin-bottom: 2.5rem;
             }
-            
             .about-visual {
                 max-width: 280px;
             }
-            
             .feature-card,
             .challenge-card {
                 padding: 1.5rem 1rem;
             }
-            
             .timeline-item {
                 padding-left: 35px;
                 margin-bottom: 2rem;
             }
-            
             .timeline-content {
                 padding: 1.2rem;
             }
-            
             .timeline-events li {
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.5rem;
                 padding: 0.8rem 0;
             }
-            
             .pricing-card {
                 padding: 1.5rem;
             }
-            
             .contact-item {
                 flex-direction: column;
                 text-align: center;
                 padding: 1.2rem;
             }
-            
             .contact-icon {
                 align-self: center;
             }
         }
-
         /* Loading Animation */
         .loading {
             position: fixed;
@@ -1197,12 +1033,10 @@
             opacity: 1;
             transition: opacity 0.5s ease;
         }
-
         .loading.hidden {
             opacity: 0;
             pointer-events: none;
         }
-
         .loader {
             width: 60px;
             height: 60px;
@@ -1211,12 +1045,10 @@
             border-radius: 50%;
             animation: spin 1s linear infinite;
         }
-
         @keyframes spin {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-
         /* Scroll Progress Bar */
         .scroll-progress {
             position: fixed;
@@ -1228,7 +1060,6 @@
             z-index: 9999;
             transition: width 0.3s ease;
         }
-
         /* Back to Top Button */
         .back-to-top {
             position: fixed;
@@ -1248,27 +1079,22 @@
             box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4);
             z-index: 1000;
         }
-
         .back-to-top.visible {
             opacity: 1;
             visibility: visible;
         }
-
         .back-to-top:hover {
             transform: translateY(-3px) scale(1.1);
             box-shadow: 0 8px 25px rgba(79, 195, 247, 0.6);
         }
-
         /* Additional Mobile Optimizations */
         @media (max-width: 375px) {
             .logo h1 {
                 display: none;
             }
-            
             .countdown {
                 grid-template-columns: repeat(2, 1fr);
             }
-            
             .back-to-top {
                 bottom: 20px;
                 right: 20px;
@@ -1276,7 +1102,6 @@
                 height: 45px;
             }
         }
-
         /* Improved touch targets for mobile */
         @media (hover: none) and (pointer: coarse) {
             .nav-links a,
@@ -1285,7 +1110,6 @@
                 min-height: 44px;
                 min-width: 44px;
             }
-            
             .countdown-item:hover,
             .feature-card:hover,
             .challenge-card:hover,
@@ -1293,7 +1117,6 @@
                 transform: none;
             }
         }
-
         /* Print styles */
         @media print {
             .navbar,
@@ -1303,41 +1126,34 @@
             .menu-toggle {
                 display: none !important;
             }
-            
             body {
                 background: white !important;
                 color: black !important;
             }
-            
             section {
                 page-break-inside: avoid;
                 margin: 1rem 0;
                 padding: 1rem 0;
             }
-            
             .hero {
                 min-height: auto;
                 padding: 2rem 0;
             }
-            
             .countdown {
                 display: none;
             }
-            
             .btn {
                 border: 2px solid black;
                 background: white !important;
                 color: black !important;
             }
         }
-
         /* High contrast mode support */
         @media (prefers-contrast: high) {
             :root {
                 --glass: rgba(255, 255, 255, 0.2);
                 --glass-border: rgba(255, 255, 255, 0.4);
             }
-            
             .nav-links a,
             .btn,
             .feature-card,
@@ -1345,7 +1161,6 @@
                 border: 2px solid var(--accent);
             }
         }
-
         /* Reduced motion support */
         @media (prefers-reduced-motion: reduce) {
             *,
@@ -1355,12 +1170,10 @@
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
             }
-            
             .particles {
                 display: none;
             }
         }
-
 /* Style for the paragraph and link */
     .contact-details p {
       font-family: sans-serif;
@@ -1372,18 +1185,14 @@
     <div class="loading" id="loading">
         <div class="loader"></div>
     </div>
-
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
-
     <!-- Animated Background Particles -->
     <div class="particles" id="particles"></div>
-
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="logo">
             <img src="Group 25.png" alt="NASA Space Apps Logo">
-            
         </div>
         <div class="nav-links" id="navLinks">
             <a href="#about">About</a>
@@ -1396,7 +1205,6 @@
             <i class="fas fa-bars"></i>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -1406,11 +1214,8 @@
   height: auto;     
   display: block;
   margin: 0 auto;   
-
 " src="Group 25.png" alt="logo" class="responsive-img">
-
             <p>Join the world's largest hackathon focused on space exploration and Earth science. Collaborate with innovators, scientists, and technologists to solve real-world challenges using NASA's open data.</p>
-            
             <div class="countdown">
                 <div class="countdown-item">
                     <div class="countdown-number" id="days">00</div>
@@ -1429,7 +1234,6 @@
                     <div class="countdown-label">Seconds</div>
                 </div>
             </div>
-            
             <div class="cta-buttons">
                 <a href="#registration" class="btn btn-primary">
                     <i class="fas fa-rocket"></i>
@@ -1442,7 +1246,6 @@
             </div>
         </div>
     </section>
-
     <!-- About Section - Completely Redesigned -->
     <section id="about">
         <div class="about-container">
@@ -1450,14 +1253,11 @@
                 <h2>About NASA Space Apps Challenge</h2>
                 <p>Experience the world's largest space and science hackathon that brings together problem solvers worldwide</p>
             </div>
-            
             <div class="about-hero">
                 <div class="about-text">
                     <h3>🚀 Innovate for Space & Earth</h3>
                     <p>NASA Space Apps Challenge is an international hackathon that takes place over 48 hours in cities around the world. The event embraces collaborative problem solving with a goal of producing relevant open-source solutions to advance space exploration missions and improve life on Earth.</p>
-                    
                     <p>This year in Nagpur, we're bringing together developers, scientists, designers, storytellers, makers, builders, technologists, and anyone with a passion for innovation to work together and create solutions to challenges we face on Earth and in space.</p>
-                    
                     <div class="about-stats">
                         <div class="stat-item">
                             <span class="stat-number">50K+</span>
@@ -1477,49 +1277,41 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="about-visual">
                     <img src="SpaceAppsDefaultLogo-e3e57Ee7.png" alt="NASA Space Apps Challenge Logo">
                 </div>
             </div>
-            
             <div class="features-section">
                 <div class="section-title">
                     <h2>Why Participate?</h2>
                     <p>Discover the incredible opportunities that await you at INTERSTELLA 3.0 2025</p>
                 </div>
-                
                 <div class="features-grid">
                     <div class="feature-card">
                         <div class="feature-icon">🌍</div>
                         <h4>Global Impact</h4>
                         <p>Create solutions that can make a real difference for space exploration and life on Earth using authentic NASA data and resources.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">🤝</div>
                         <h4>Collaborative Spirit</h4>
                         <p>Work alongside passionate individuals from diverse backgrounds, fostering innovation through teamwork and shared knowledge.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">🏆</div>
                         <h4>Recognition & Prizes</h4>
                         <p>Compete for exciting prizes, certificates, and the chance to have your solution recognized by NASA experts worldwide.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">📚</div>
                         <h4>Learning Experience</h4>
                         <p>Gain hands-on experience with cutting-edge technologies, attend workshops, and learn from industry mentors.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">🌐</div>
                         <h4>Network Building</h4>
                         <p>Connect with like-minded innovators, potential collaborators, and industry professionals from the space and tech sectors.</p>
                     </div>
-                    
                     <div class="feature-card">
                         <div class="feature-icon">💡</div>
                         <h4>Innovation Platform</h4>
@@ -1529,14 +1321,12 @@
             </div>
         </div>
     </section>
-
     <!-- Challenges Section -->
     <section id="challenges" class="challenges">
         <div class="section-title">
             <h2>Challenge Categories</h2>
             <p>Explore the exciting challenge categories that await you at NASA Space Apps Nagpur 2025</p>
         </div>
-        
         <div class="challenges-grid">
             <div class="challenge-card">
                 <div class="challenge-icon">🌍</div>
@@ -1567,7 +1357,6 @@
             Discover the flagship initiative of NASA Space Apps Nagpur 2025, designed to empower teams to create impactful solutions for space and Earth.
         </p>
     </div>
-
     <div style="max-width:1100px; margin:0 auto; display:flex; flex-wrap:wrap; gap:3rem; align-items:center;">
         <!-- Left Column -->
         <div style="flex:1; min-width:280px;">
@@ -1587,28 +1376,23 @@ Because science belongs to everyone no exceptions            </p>
                 <li>Showcase your work to NASA judges</li>
             </ul>
         </div>
-
         <!-- Right Column -->
         <div style="flex:1; min-width:280px; text-align:center;">
             <img src="projectswave.jpg" alt="Project Wave Logo" style="width:80%; max-width:320px; border-radius:20px; box-shadow:0 8px 32px rgba(79,195,247,0.4); background:rgba(255,255,255,0.05); padding:10px;">
         </div>
     </div>
-
     <div style="margin-top:3rem; text-align:center;">
         <a href="https://forms.office.com/r/9a6x062kbR" style="display:inline-block; min-width:220px; padding:14px 28px; font-size:1.1rem; font-weight:600; color:white; background:linear-gradient(135deg,#4fc3f7,#fc3d21); border-radius:50px; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,0.3); transition:all 0.3s ease;">
             <i class="fas fa-rocket"></i> Join Project Wave
         </a>
     </div>
 </section>
-
-
     <!-- Schedule Section -->
     <section id="schedule">
         <div class="section-title">
             <h2>Event Schedule</h2>
             <p>Three days of innovation, collaboration, and breakthrough solutions</p>
         </div>
-        
         <div class="schedule-timeline">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
@@ -1624,7 +1408,6 @@ Because science belongs to everyone no exceptions            </p>
                     </ul>
                 </div>
             </div>
-            
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">Coming Soon</div>
@@ -1638,18 +1421,15 @@ Because science belongs to everyone no exceptions            </p>
                     </ul>
                 </div>
             </div>
-           
             </div>
         </div>
     </section>
-
     <!-- Registration Section -->
     <section id="registration" class="registration">
         <div class="section-title">
             <h2>Registration & Events</h2>
             <p>Secure your spot at the most exciting space and technology events in Nagpur</p>
         </div>
-        
         <div class="registration-container">
             <div class="registration-info">
                 <div style="margin-top: 20px;">
@@ -1657,13 +1437,11 @@ Because science belongs to everyone no exceptions            </p>
                     <p>Welcome to NASA Space Apps 2025, the ultimate challenge of skill, speed, and creativity. We do things differently. Instead of giving you weeks to prepare, we believe the best ideas spark under pressure. That's why our official problem statements are kept top-secret until the clock starts ticking on event day.</p>
                     <p>This is a true test of your ability to innovate on the fly. Whether you're a coder, a designer, or a visionary problem-solver, this is your platform to collaborate, create, and build something extraordinary from scratch.</p>
                 </div>
-
                 <div style="margin-top: 300px;">
                     <h3>MUN EVENT (MODEL-UN)</h3>
                     <p>The World Needs Leaders. Nagpur, Are You Ready? The defining issues of our time—from climate change and economic stability to global security—are not debated in distant chambers alone. Their impact is felt right here.</p>
                     <p>Welcome to Model UN Nagpur, your premier platform for the next generation of diplomats, thinkers, and leaders. This is your opportunity to step into the shoes of a world representative, to grapple with complex global challenges, and to forge solutions through negotiation, strategy, and powerful oratory.</p>
                 </div>
-
                 <div style="margin-top: 200px;">
                     <h3>SPACE QUIZ PASS</h3>
                     <p>A Journey to the Stars. One Question at a Time. How well do you know the universe beyond our world? It's time to find out. Welcome to the Space Quiz, Nagpur's premier cosmic challenge.</p>
@@ -1680,7 +1458,6 @@ The event serves as a platform for knowledge exchange between young minds and in
 It encourages hands-on learning, critical thinking, and collaborative problem-solving.
 Special focus is given to projects addressing global challenges such as climate change, sustainability, and space science.</P></div>
             </div>
-            
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <h4>HACKATHON EVENT</h4>
@@ -1696,7 +1473,6 @@ Special focus is given to projects addressing global challenges such as climate 
                         Register Now
                     </button>
                 </div>
-                
                 <div class="pricing-card">
                     <h4>MUN-EVENT (MODEL-UN)</h4>
                     <div class="price">₹1,499<span> / person</span></div>
@@ -1712,7 +1488,6 @@ Special focus is given to projects addressing global challenges such as climate 
                         Register Now
                     </button>
                 </div>
-                
                 <div class="pricing-card">
                     <h4>SPACE QUIZ PASS (4 PERSON)</h4>
                     <div class="price">₹150<span> / person</span></div>
@@ -1744,14 +1519,82 @@ Special focus is given to projects addressing global challenges such as climate 
         </div>
     </section>
 
+    <!-- Event Venue Section -->
+    <section id="venue" style="background: rgba(10, 26, 47, 0.3); position: relative; padding: 60px 5%; margin: 0;">
+        <div class="section-title">
+            <h2>Event Venue</h2>
+            <p>Join us at our state-of-the-art venue in Nagpur</p>
+        </div>
+        <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;">
+            <!-- Address Section -->
+            <div style="background: var(--glass); backdrop-filter: blur(20px); border: 1px solid var(--glass-border); border-radius: 20px; padding: 2.5rem; height: fit-content;">
+                <h3 style="background: linear-gradient(135deg, var(--accent), #ffffff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 700; font-size: 1.8rem; margin-bottom: 1.5rem;">Venue Information</h3>
+                <div style="color: #cbd5e0; line-height: 1.8; font-size: 1.1rem;">
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                    </div>
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, var(--primary), var(--accent)); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                            <i class="fas fa-university" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent); font-size: 1.2rem; margin-bottom: 0.5rem;">Host Institution</h4>
+                            <p style="margin: 0;">G.H. Raisoni College Of Engineering and Management, Nagpur</p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, var(--primary), var(--accent)); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                            <i class="fas fa-calendar-alt" style="color: white;"></i>
+                        </div>
+                        
+                        <div>
+                            <h4 style="color: var(--accent); font-size: 1.2rem; margin-bottom: 0.5rem;">Date</h4>
+                            <p style="margin: 0;">October 4-5, 2025</p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 1.5rem; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, var(--primary), var(--accent)); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                            <i class="fas fa-clock" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent); font-size: 1.2rem; margin-bottom: 0.5rem;">Time</h4>
+                            <p style="margin: 0;">9:00 AM onwards (Day 1)</p>
+                        </div>
+                    </div>
+                    <div style="margin-bottom: 0; display: flex; align-items: flex-start; gap: 1rem;">
+                        <div style="background: linear-gradient(135deg, var(--primary), var(--accent)); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                            <i class="fas fa-car" style="color: white;"></i>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--accent); font-size: 1.2rem; margin-bottom: 0.5rem;">Parking</h4>
+                            <p style="margin: 0;">Ample parking available on campus</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/YYV3k81Ve5yeVWQm9" target="_blank" style="display: inline-block; margin-top: 2rem; padding: 1rem 2rem; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: white; text-decoration: none; border-radius: 50px; font-weight: 600; transition: all 0.3s ease;">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+            
+            <!-- Google Map Section -->
+            <div style="border-radius: 20px; overflow: hidden; box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4); height: 500px; background: #f0f0f0;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.8800590835276!2d79.0001544!3d21.1245838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4eab12bd10cef%3A0xf6e67c2f0a066c27!2sG%20H%20Raisoni%20College%20of%20Engineering%20and%20Management%20%2C%20Nagpur%20(GHRCEMN)!5e0!3m2!1sen!2sin!4v1755744274359!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style="border: 0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <!-- Sponsors Section -->
-<!-- Sponsors Section -->
 <section id="sponsors-section">
   <div class="sponsors-container">
                     <div class="price">Partners</div>
                     <h4>Our partners:</h4>
-   
-
     <div class="sponsors-logos">
       <div class="sponsor">
         <img src="[CITYPNG.COM]HD Nasa Logo Transparent Background - 3000x3000.png" alt="Sponsor 1">
@@ -1765,75 +1608,62 @@ Special focus is given to projects addressing global challenges such as climate 
     </div>
   </div>
 </section>
-
 <style>
   #sponsors-section {
     background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black */
     padding: 60px 20px;
     text-align: center;
   }
-
   .sponsors-title {
     color: #fff;
     font-size: 32px;
     margin-bottom: 10px;
   }
-
   .sponsors-subtitle {
     color: #ccc;
     font-size: 18px;
     margin-bottom: 40px;
   }
-
   .sponsors-logos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
   }
-
   .sponsor {
     max-width: 200px;
     width: 100%;
     transition: transform 0.3s ease;
   }
-
   .sponsor img {
     width: 100%;
     height: auto;
     object-fit: contain;
     transition: filter 0.3s ease, transform 0.3s ease;
   }
-
   .sponsor:hover img {
     filter: grayscale(0%);
     transform: scale(1.05);
   }
-
   /* Responsive */
   @media (max-width: 600px) {
     .sponsors-title {
       font-size: 26px;
     }
-
     .sponsors-subtitle {
       font-size: 16px;
     }
-
     .sponsor {
       max-width: 150px;
     }
   }
 </style>
-
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="section-title">
             <h2>Get In Touch</h2>
             <p>Have questions? We're here to help make your NASA Space Apps experience amazing</p>
         </div>
-        
         <div class="contact-container">
             <div class="contact-item">
                 <div class="contact-icon">
@@ -1844,7 +1674,6 @@ Special focus is given to projects addressing global challenges such as climate 
                     <p>nasaspaceappsnagpur@gmail.com</p>
                 </div>
             </div>
-            
             <div class="contact-item">
                 <div class="contact-icon">
                     <i class="fas fa-phone"></i>
@@ -1856,7 +1685,6 @@ Special focus is given to projects addressing global challenges such as climate 
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="footer-content">
@@ -1873,18 +1701,15 @@ Special focus is given to projects addressing global challenges such as climate 
                 <a href="https://www.instagram.com/nasaspaceappsnagpur?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 <a href="mailto:nasaspaceappsnagpur@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
             </div>
-            
            <div class="copyright">
                  <p> &#169; All Rights Reserved by NASA Space Apps Nagpur 2025. Built by <a href="https://interactdevelopments.me/" style="color:white; ">Interact Developments </a> & Tech Team. Payments gateway powered by RazorPay.</p>
             </div>
         </div>
     </footer>
-
     <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-chevron-up"></i>
     </button>
-
     <script>
         // Enhanced initialization
         document.addEventListener('DOMContentLoaded', function() {
@@ -1894,12 +1719,10 @@ Special focus is given to projects addressing global challenges such as climate 
             hideLoader();
             initializeMobileMenu();
         });
-
         // Create animated background particles
         function initializeParticles() {
             const particlesContainer = document.getElementById('particles');
             const particleCount = window.innerWidth < 768 ? 25 : 50; // Fewer particles on mobile
-            
             for (let i = 0; i < particleCount; i++) {
                 const particle = document.createElement('div');
                 particle.className = 'particle';
@@ -1910,29 +1733,24 @@ Special focus is given to projects addressing global challenges such as climate 
                 particlesContainer.appendChild(particle);
             }
         }
-
         // Hide loading screen
         function hideLoader() {
             setTimeout(() => {
                 document.getElementById('loading').classList.add('hidden');
             }, 1000);
         }
-
         // Initialize mobile menu
         function initializeMobileMenu() {
             const menuToggle = document.getElementById('menuToggle');
             const navLinks = document.getElementById('navLinks');
             const menuIcon = menuToggle.querySelector('i');
-            
             menuToggle.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
                 menuIcon.classList.toggle('fa-bars');
                 menuIcon.classList.toggle('fa-times');
-                
                 // Prevent body scroll when menu is open
                 document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
             });
-            
             // Close menu when clicking on a link
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', () => {
@@ -1942,7 +1760,6 @@ Special focus is given to projects addressing global challenges such as climate 
                     document.body.style.overflow = '';
                 });
             });
-
             // Close menu when clicking outside
             document.addEventListener('click', (e) => {
                 if (!menuToggle.contains(e.target) && !navLinks.contains(e.target)) {
@@ -1953,19 +1770,16 @@ Special focus is given to projects addressing global challenges such as climate 
                 }
             });
         }
-
         // Enhanced countdown timer
         function updateCountdown() {
             const targetDate = new Date('2025-10-04T09:00:00').getTime();
             const now = new Date().getTime();
             const difference = targetDate - now;
-            
             if (difference > 0) {
                 const days = Math.floor(difference / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                 const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-                
                 animateNumber('days', days);
                 animateNumber('hours', hours);
                 animateNumber('minutes', minutes);
@@ -1974,7 +1788,6 @@ Special focus is given to projects addressing global challenges such as climate 
                 document.querySelector('.countdown').innerHTML = '<div class="countdown-item"><div class="countdown-number">🚀</div><div class="countdown-label">Event Started!</div></div>';
             }
         }
-
         function animateNumber(id, value) {
             const element = document.getElementById(id);
             const formattedValue = value.toString().padStart(2, '0');
@@ -1986,26 +1799,20 @@ Special focus is given to projects addressing global challenges such as climate 
                 }, 200);
             }
         }
-        
         setInterval(updateCountdown, 1000);
         updateCountdown();
-
         // Initialize scroll effects
         function initializeScrollEffects() {
             const navbar = document.getElementById('navbar');
             const scrollProgress = document.getElementById('scrollProgress');
             const backToTop = document.getElementById('backToTop');
-            
             let ticking = false;
-            
             function updateScrollEffects() {
                 const scrolled = window.pageYOffset;
                 const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
                 const scrollPercent = (scrolled / maxScroll) * 100;
-                
                 // Update scroll progress
                 scrollProgress.style.width = scrollPercent + '%';
-                
                 // Navbar scroll effect
                 if (scrolled > 100) {
                     navbar.classList.add('scrolled');
@@ -2014,17 +1821,14 @@ Special focus is given to projects addressing global challenges such as climate 
                     navbar.classList.remove('scrolled');
                     backToTop.classList.remove('visible');
                 }
-                
                 ticking = false;
             }
-            
             window.addEventListener('scroll', () => {
                 if (!ticking) {
                     requestAnimationFrame(updateScrollEffects);
                     ticking = true;
                 }
             });
-            
             // Back to top functionality
             backToTop.addEventListener('click', () => {
                 window.scrollTo({
@@ -2033,20 +1837,17 @@ Special focus is given to projects addressing global challenges such as climate 
                 });
             });
         }
-
         // Initialize animations with Intersection Observer
         function initializeAnimations() {
             const observerOptions = {
                 threshold: 0.1,
                 rootMargin: '0px 0px -50px 0px'
             };
-            
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.style.opacity = '1';
                         entry.target.style.transform = 'translateY(0)';
-                        
                         // Add stagger effect for grid items
                         if (entry.target.classList.contains('features-grid') || 
                             entry.target.classList.contains('challenges-grid')) {
@@ -2058,13 +1859,11 @@ Special focus is given to projects addressing global challenges such as climate 
                                 }, index * 100);
                             });
                         }
-                        
                         // Unobserve after animation
                         observer.unobserve(entry.target);
                     }
                 });
             }, observerOptions);
-            
             // Observe sections for animation
             document.querySelectorAll('section, .feature-card, .challenge-card, .timeline-item, .about-hero, .about-stats').forEach(element => {
                 element.style.opacity = '0';
@@ -2073,7 +1872,6 @@ Special focus is given to projects addressing global challenges such as climate 
                 observer.observe(element);
             });
         }
-        
         // Enhanced smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -2088,7 +1886,6 @@ Special focus is given to projects addressing global challenges such as climate 
                 }
             });
         });
-
         // Optimize for mobile performance
         function optimizeForMobile() {
             if (window.innerWidth < 768) {
@@ -2099,17 +1896,14 @@ Special focus is given to projects addressing global challenges such as climate 
                         particle.remove();
                     }
                 });
-                
                 // Disable some animations on mobile for better performance
                 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
                     document.body.classList.add('reduced-motion');
                 }
             }
         }
-
         // Initialize mobile optimizations
         optimizeForMobile();
-
         // Handle resize events
         let resizeTimer;
         window.addEventListener('resize', () => {
@@ -2118,28 +1912,23 @@ Special focus is given to projects addressing global challenges such as climate 
                 optimizeForMobile();
             }, 250);
         });
-
         // Add loading states for buttons
         function addLoadingState(button, originalText) {
             button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
             button.disabled = true;
-            
             setTimeout(() => {
                 button.innerHTML = originalText;
                 button.disabled = false;
             }, 2000);
         }
-
         // Add click handlers for registration buttons
         document.querySelectorAll('.btn-primary').forEach(btn => {
             btn.addEventListener('click', function(e) {
                 if (this.onclick) return; // Skip if already has onclick
-                
                 const originalText = this.innerHTML;
                 addLoadingState(this, originalText);
             });
         });
-
         // Add error handling for images
         document.querySelectorAll('img').forEach(img => {
             img.addEventListener('error', function() {
@@ -2147,13 +1936,11 @@ Special focus is given to projects addressing global challenges such as climate 
                 console.log('Image failed to load:', this.src);
             });
         });
-
         // Add performance monitoring
         window.addEventListener('load', () => {
             if ('performance' in window) {
                 const loadTime = performance.now();
                 console.log(`🚀 Page loaded in ${loadTime.toFixed(2)}ms`);
-                
                 // Log largest contentful paint if available
                 if ('PerformanceObserver' in window) {
                     const observer = new PerformanceObserver((list) => {
@@ -2165,7 +1952,6 @@ Special focus is given to projects addressing global challenges such as climate 
                 }
             }
         });
-
         // Add connection status indicator
         function updateConnectionStatus() {
             const isOnline = navigator.onLine;
@@ -2173,7 +1959,6 @@ Special focus is given to projects addressing global challenges such as climate 
                 showNotification('📡 You are offline. Some features may not work.', 'warning');
             }
         }
-
         function showNotification(message, type = 'info') {
             const notification = document.createElement('div');
             notification.innerHTML = message;
@@ -2192,22 +1977,17 @@ Special focus is given to projects addressing global challenges such as climate 
                 text-align: center;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3);
             `;
-            
             document.body.appendChild(notification);
-            
             setTimeout(() => {
                 if (notification.parentNode) {
                     notification.parentNode.removeChild(notification);
                 }
             }, 5000);
         }
-
         window.addEventListener('online', () => {
             showNotification('🌐 Connection restored!', 'success');
         });
-
         window.addEventListener('offline', updateConnectionStatus);
-
         // Add keyboard navigation improvements
         document.addEventListener('keydown', (e) => {
             // Add keyboard shortcuts
@@ -2223,18 +2003,15 @@ Special focus is given to projects addressing global challenges such as climate 
                         break;
                 }
             }
-            
             // Improve focus management
             if (e.key === 'Tab') {
                 document.body.classList.add('keyboard-navigation');
             }
-
             // ESC to close mobile menu
             if (e.key === 'Escape') {
                 const navLinks = document.getElementById('navLinks');
                 const menuToggle = document.getElementById('menuToggle');
                 const menuIcon = menuToggle.querySelector('i');
-                
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     menuIcon.classList.add('fa-bars');
@@ -2243,11 +2020,9 @@ Special focus is given to projects addressing global challenges such as climate 
                 }
             }
         });
-
         document.addEventListener('mousedown', () => {
             document.body.classList.remove('keyboard-navigation');
         });
-
         // Add lazy loading for images
         if ('IntersectionObserver' in window) {
             const imageObserver = new IntersectionObserver((entries) => {
@@ -2262,12 +2037,10 @@ Special focus is given to projects addressing global challenges such as climate 
                     }
                 });
             });
-
             document.querySelectorAll('img[data-src]').forEach(img => {
                 imageObserver.observe(img);
             });
         }
-
         // Add CSS for keyboard navigation
         const keyboardStyles = document.createElement('style');
         keyboardStyles.textContent = `
@@ -2275,7 +2048,6 @@ Special focus is given to projects addressing global challenges such as climate 
                 outline: 2px solid var(--accent) !important;
                 outline-offset: 2px !important;
             }
-            
             .reduced-motion * {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
@@ -2283,7 +2055,6 @@ Special focus is given to projects addressing global challenges such as climate 
             }
         `;
         document.head.appendChild(keyboardStyles);
-
         // Final initialization check
         console.log('🚀 NASA Space Apps Nagpur 2025 - Enhanced Responsive Website Loaded!');
         console.log('✨ All features optimized for mobile and desktop');
